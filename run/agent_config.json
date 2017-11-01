@@ -137,16 +137,16 @@
       "password": "<String len: 4>"
     },
     "env": "local",
-    "name": "practice",
-    "keys": "<String len: 27>",
+    "name": "egg-practice",
+    "keys": "<String len: 31>",
     "proxy": false,
     "protocolHeaders": "x-forwarded-proto",
     "ipHeaders": "x-forwarded-for",
     "hostHeaders": "x-forwarded-host",
     "pkg": {
-      "name": "practice",
+      "name": "egg-practice",
       "version": "1.0.0",
-      "description": "",
+      "description": "egg.js框架练习",
       "private": true,
       "dependencies": {
         "egg": "^1.9.0",
@@ -188,7 +188,7 @@
         "type": "git",
         "url": ""
       },
-      "author": "",
+      "author": "morehao",
       "license": "MIT"
     },
     "baseDir": "F:\\2017\\egg\\egg-practice",
@@ -223,7 +223,7 @@
       }
     },
     "logger": {
-      "dir": "F:\\2017\\egg\\egg-practice\\logs\\practice",
+      "dir": "F:\\2017\\egg\\egg-practice\\logs\\egg-practice",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -231,7 +231,7 @@
       "disableConsoleAfterReady": false,
       "outputJSON": false,
       "buffer": true,
-      "appLogName": "practice-web.log",
+      "appLogName": "egg-practice-web.log",
       "coreLogName": "egg-web.log",
       "agentLogName": "egg-agent.log",
       "errorLogName": "common-error.log",

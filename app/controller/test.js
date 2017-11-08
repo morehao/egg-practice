@@ -4,6 +4,7 @@ module.exports = app=>{
     class TestController extends app.Controller {
 
         * index(){
+            console.log('env:',app.config.env);
             yield this.ctx.render('test.tpl');
         };
         * form(){

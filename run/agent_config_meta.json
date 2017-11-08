@@ -10,13 +10,48 @@
     "cache": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.1.2@egg-view\\config\\config.local.js",
     "defaultExtension": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.1.2@egg-view\\config\\config.default.js"
   },
-  "exports": {
-    "security": {
-      "queryName": "F:\\2017\\egg\\egg-practice\\config\\config.default.js",
-      "bodyName": "F:\\2017\\egg\\egg-practice\\config\\config.default.js",
-      "useSession": "F:\\2017\\egg\\egg-practice\\config\\config.default.js",
-      "cookieName": "F:\\2017\\egg\\egg-practice\\config\\config.default.js",
-      "sessionName": "F:\\2017\\egg\\egg-practice\\config\\config.default.js"
+  "security": {
+    "csrf": {
+      "enable": "F:\\2017\\egg\\egg-practice\\config\\config.default.js",
+      "useSession": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js",
+      "ignoreJSON": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js",
+      "cookieName": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js",
+      "sessionName": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js",
+      "headerName": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js",
+      "bodyName": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js",
+      "queryName": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js"
+    },
+    "domainWhiteList": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js",
+    "protocolWhiteList": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js",
+    "defaultMiddleware": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js",
+    "xframe": {
+      "enable": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js",
+      "value": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js"
+    },
+    "hsts": {
+      "enable": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.local.js",
+      "maxAge": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js",
+      "includeSubdomains": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js"
+    },
+    "dta": {
+      "enable": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js"
+    },
+    "noopen": {
+      "enable": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js"
+    },
+    "nosniff": {
+      "enable": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js"
+    },
+    "xssProtection": {
+      "enable": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js",
+      "value": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js"
+    },
+    "csp": {
+      "enable": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js",
+      "policy": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js"
     }
   },
   "sequelize": {
@@ -26,6 +61,24 @@
     "port": "F:\\2017\\egg\\egg-practice\\config\\config.default.js",
     "username": "F:\\2017\\egg\\egg-practice\\config\\config.default.js",
     "password": "F:\\2017\\egg\\egg-practice\\config\\config.default.js"
+  },
+  "logger": {
+    "consoleLevel": "F:\\2017\\egg\\egg-practice\\config\\config.local.js",
+    "dir": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
+    "encoding": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
+    "env": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
+    "level": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
+    "outputJSON": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
+    "buffer": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
+    "appLogName": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
+    "coreLogName": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
+    "agentLogName": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
+    "errorLogName": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
+    "coreLogger": {
+      "consoleLevel": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.local.js"
+    },
+    "allowDebugAtProd": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js"
   },
   "onerror": {
     "errorPageUrl": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.5.0@egg-onerror\\config\\config.default.js",
@@ -61,50 +114,6 @@
     "files": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.5.0@egg-multipart\\config\\config.default.js",
     "fileExtensions": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.5.0@egg-multipart\\config\\config.default.js",
     "whitelist": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.5.0@egg-multipart\\config\\config.default.js"
-  },
-  "security": {
-    "domainWhiteList": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js",
-    "protocolWhiteList": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js",
-    "defaultMiddleware": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js",
-    "csrf": {
-      "enable": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js",
-      "useSession": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js",
-      "ignoreJSON": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js",
-      "cookieName": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js",
-      "sessionName": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js",
-      "headerName": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js",
-      "bodyName": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js",
-      "queryName": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js"
-    },
-    "xframe": {
-      "enable": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js",
-      "value": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js"
-    },
-    "hsts": {
-      "enable": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.local.js",
-      "maxAge": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js",
-      "includeSubdomains": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js"
-    },
-    "dta": {
-      "enable": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js"
-    },
-    "methodnoallow": {
-      "enable": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js"
-    },
-    "noopen": {
-      "enable": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js"
-    },
-    "nosniff": {
-      "enable": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js"
-    },
-    "xssProtection": {
-      "enable": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js",
-      "value": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js"
-    },
-    "csp": {
-      "enable": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js",
-      "policy": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js"
-    }
   },
   "helper": {
     "shtml": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security\\config\\config.default.js"
@@ -155,6 +164,11 @@
     "description": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
     "private": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
     "dependencies": {
+      "@alicloud/sms-sdk": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
+      "ali-sms": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
+      "async": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
+      "co": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
+      "crypto": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
       "egg": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
       "egg-mysql": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
       "egg-scripts": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
@@ -227,24 +241,6 @@
       "depth": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
       "parameterLimit": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js"
     }
-  },
-  "logger": {
-    "dir": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
-    "encoding": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
-    "env": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
-    "level": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
-    "consoleLevel": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
-    "disableConsoleAfterReady": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
-    "outputJSON": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
-    "buffer": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
-    "appLogName": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
-    "coreLogName": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
-    "agentLogName": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
-    "errorLogName": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",
-    "coreLogger": {
-      "consoleLevel": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.local.js"
-    },
-    "allowDebugAtProd": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js"
   },
   "httpclient": {
     "enableDNSCache": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\config.default.js",

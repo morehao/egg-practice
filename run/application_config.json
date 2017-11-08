@@ -63,15 +63,14 @@
       "protocolWhiteList": [],
       "defaultMiddleware": "csrf,hsts,methodnoallow,noopen,nosniff,csp,xssProtection,xframe,dta",
       "csrf": {
-        "enable": true,
+        "enable": false,
         "useSession": false,
         "ignoreJSON": false,
         "cookieName": "csrfToken",
         "sessionName": "csrfToken",
         "headerName": "x-csrf-token",
         "bodyName": "_csrf",
-        "queryName": "_csrf",
-        "matching": "<Function anonymous>"
+        "queryName": "_csrf"
       },
       "xframe": {
         "enable": true,
@@ -182,6 +181,11 @@
       "description": "egg.js框架练习",
       "private": true,
       "dependencies": {
+        "@alicloud/sms-sdk": "^1.0.2",
+        "ali-sms": "^1.0.3",
+        "async": "^2.5.0",
+        "co": "^4.6.0",
+        "crypto": "^1.0.1",
         "egg": "^1.9.0",
         "egg-mysql": "^3.0.0",
         "egg-scripts": "^2.1.0",
@@ -318,14 +322,8 @@
       "responseTimeout": 60000
     },
     "middleware": [],
-    "exports": {
-      "security": {
-        "queryName": "csrfToken",
-        "bodyName": "csrfToken",
-        "useSession": true,
-        "cookieName": "csrfToken",
-        "sessionName": "csrfToken"
-      }
+    "encrypt": {
+      "cryptKey": "eggPractice"
     },
     "coreMiddlewares": [
       "meta",

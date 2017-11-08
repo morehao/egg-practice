@@ -12,11 +12,11 @@
     <script>
       $('#ajax').click(function () {
         alert('ajax');
-        var csrfToken = CookieUtil.get('csrfToken');
-        console.log("csrftoken:",csrfToken);
+        {#var csrfToken = CookieUtil.get('csrfToken');
+        console.log("csrftoken:",csrfToken);#}
         $.ajax({
 				type:'post',
-                headers: { 'x-csrf-token': csrfToken },
+                {#headers: { 'x-csrf-token': csrfToken },#}
                 data:{data: 'ajax'},
                 url:'/test/ajax',
                 success:function (res) {

@@ -4,6 +4,11 @@
   "description": "egg.js框架练习",
   "private": true,
   "dependencies": {
+    "@alicloud/sms-sdk": "^1.0.2",
+    "ali-sms": "^1.0.3",
+    "async": "^2.5.0",
+    "co": "^4.6.0",
+    "crypto": "^1.0.1",
     "egg": "^1.9.0",
     "egg-mysql": "^3.0.0",
     "egg-scripts": "^2.1.0",

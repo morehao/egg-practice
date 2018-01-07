@@ -2,7 +2,9 @@ module.exports = app => {
   class UserController extends app.Controller {
       * signup(){
           console.log('signup');
-          console.log('config:',app.config.encrypt.cryptKey);
+          console.log('config:',app.config.signup.enable);
+          app.config.signup.enable = false;
+          console.log('config:',app.config.signup.enable);
           yield this.ctx.render('signup.tpl');
       }
       async telYanzheng(ctx){

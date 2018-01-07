@@ -1,39 +1,10 @@
 {
   "config": {
-    "onerror": {
-      "errorPageUrl": "",
-      "appErrorFilter": null
-    },
     "session": {
       "maxAge": 86400000,
       "key": "EGG_SESS",
       "httpOnly": true,
       "encrypt": true
-    },
-    "i18n": {
-      "defaultLocale": "en_US",
-      "dirs": [],
-      "queryField": "locale",
-      "cookieField": "locale",
-      "cookieMaxAge": "1y"
-    },
-    "watcher": {
-      "type": "development",
-      "eventSources": {
-        "default": "F:\\2017\\egg\\egg-practice\\node_modules\\.2.2.0@egg-watcher\\lib\\event-sources\\default",
-        "development": "F:\\2017\\egg\\egg-practice\\node_modules\\.2.2.0@egg-watcher\\lib\\event-sources\\development"
-      }
-    },
-    "multipart": {
-      "autoFields": false,
-      "defaultCharset": "utf8",
-      "fieldNameSize": 100,
-      "fieldSize": "100kb",
-      "fields": 10,
-      "fileSize": "10mb",
-      "files": 10,
-      "fileExtensions": [],
-      "whitelist": null
     },
     "security": {
       "domainWhiteList": [],
@@ -82,28 +53,6 @@
     "helper": {
       "shtml": {}
     },
-    "development": {
-      "watchDirs": [],
-      "ignoreDirs": [],
-      "fastReady": true,
-      "reloadOnDebug": true
-    },
-    "logrotator": {
-      "filesRotateByHour": null,
-      "filesRotateBySize": null,
-      "maxFileSize": 52428800,
-      "maxFiles": 10,
-      "rotateDuration": 60000,
-      "maxDays": 31
-    },
-    "static": {
-      "prefix": "/public/",
-      "dir": "F:\\2017\\egg\\egg-practice\\app\\public",
-      "dynamic": true,
-      "preload": false,
-      "buffer": false,
-      "maxFiles": 1000
-    },
     "jsonp": {
       "limit": 50,
       "callback": [
@@ -112,8 +61,60 @@
       ],
       "csrf": false
     },
+    "onerror": {
+      "errorPageUrl": "",
+      "appErrorFilter": null
+    },
+    "i18n": {
+      "defaultLocale": "en_US",
+      "dirs": [],
+      "queryField": "locale",
+      "cookieField": "locale",
+      "cookieMaxAge": "1y"
+    },
+    "watcher": {
+      "type": "development",
+      "eventSources": {
+        "default": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-watcher@2.2.0@egg-watcher\\lib\\event-sources\\default",
+        "development": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-watcher@2.2.0@egg-watcher\\lib\\event-sources\\development"
+      }
+    },
+    "multipart": {
+      "autoFields": false,
+      "defaultCharset": "utf8",
+      "fieldNameSize": 100,
+      "fieldSize": "100kb",
+      "fields": 10,
+      "fileSize": "10mb",
+      "files": 10,
+      "fileExtensions": [],
+      "whitelist": null
+    },
+    "development": {
+      "watchDirs": [],
+      "ignoreDirs": [],
+      "fastReady": false,
+      "reloadOnDebug": true
+    },
+    "logrotator": {
+      "filesRotateByHour": null,
+      "hourDelimiter": "-",
+      "filesRotateBySize": null,
+      "maxFileSize": 52428800,
+      "maxFiles": 10,
+      "rotateDuration": 60000,
+      "maxDays": 31
+    },
+    "static": {
+      "prefix": "/public/",
+      "dir": "G:\\2017\\egg\\egg-practice\\app\\public",
+      "dynamic": true,
+      "preload": false,
+      "buffer": false,
+      "maxFiles": 1000
+    },
     "view": {
-      "root": "F:\\2017\\egg\\egg-practice\\app\\view",
+      "root": "G:\\2017\\egg\\egg-practice\\app\\view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "nunjucks",
@@ -131,10 +132,42 @@
     "sequelize": {
       "dialect": "mysql",
       "database": "egg-practice",
-      "host": "localhost",
+      "host": "192.168.2.138",
       "port": "3306",
       "username": "root",
-      "password": "<String len: 4>"
+      "password": "<String len: 4>",
+      "logging": false
+    },
+    "redis": {
+      "default": {},
+      "app": true,
+      "agent": false,
+      "clients": {
+        "session": {
+          "host": "127.0.0.1",
+          "port": 6379,
+          "password": "<String len: 0>",
+          "db": 0
+        },
+        "user": {
+          "host": "127.0.0.1",
+          "port": 6379,
+          "password": "<String len: 0>",
+          "db": 1
+        },
+        "interaction": {
+          "host": "127.0.0.1",
+          "port": 6379,
+          "password": "<String len: 0>",
+          "db": 2
+        },
+        "test": {
+          "host": "127.0.0.1",
+          "port": 6379,
+          "password": "<String len: 0>",
+          "db": 3
+        }
+      }
     },
     "env": "local",
     "name": "egg-practice",
@@ -154,12 +187,16 @@
         "async": "^2.5.0",
         "co": "^4.6.0",
         "crypto": "^1.0.1",
-        "egg": "^1.9.0",
+        "egg": "^1.12.0",
         "egg-mysql": "^3.0.0",
+        "egg-redis": "^1.0.2",
         "egg-scripts": "^2.1.0",
         "egg-sequelize": "^3.1.0",
         "egg-view-nunjucks": "^2.1.4",
-        "mysql2": "^1.4.2"
+        "fs": "^0.0.1-security",
+        "koa-is-json": "^1.0.0",
+        "mysql2": "^1.4.2",
+        "zlib": "^1.0.5"
       },
       "devDependencies": {
         "autod": "^2.10.0",
@@ -196,9 +233,9 @@
       "author": "morehao",
       "license": "MIT"
     },
-    "baseDir": "F:\\2017\\egg\\egg-practice",
+    "baseDir": "G:\\2017\\egg\\egg-practice",
     "HOME": "C:\\Users\\moreh",
-    "rundir": "F:\\2017\\egg\\egg-practice\\run",
+    "rundir": "G:\\2017\\egg\\egg-practice\\run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -228,11 +265,11 @@
       }
     },
     "logger": {
-      "dir": "F:\\2017\\egg\\egg-practice\\logs\\egg-practice",
+      "dir": "G:\\2017\\egg\\egg-practice\\logs\\egg-practice",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
-      "consoleLevel": "DEBUG",
+      "consoleLevel": "INFO",
       "disableConsoleAfterReady": false,
       "outputJSON": false,
       "buffer": true,
@@ -284,7 +321,19 @@
     "clusterClient": {
       "responseTimeout": 60000
     },
-    "middleware": [],
+    "middleware": [
+      "test",
+      "gzip"
+    ],
+    "gzip": {
+      "threshold": 1024
+    },
+    "encrypt": {
+      "cryptKey": "eggPractice"
+    },
+    "signup": {
+      "signup": true
+    },
     "coreMiddlewares": [
       "meta",
       "siteFile",
@@ -292,21 +341,16 @@
       "bodyParser",
       "overrideMethod"
     ],
-    "appMiddlewares": [],
-    "appMiddleware": []
+    "appMiddlewares": [
+      "test",
+      "gzip"
+    ],
+    "appMiddleware": [
+      "test",
+      "gzip"
+    ]
   },
   "plugins": {
-    "onerror": {
-      "enable": true,
-      "package": "egg-onerror",
-      "name": "onerror",
-      "dependencies": [],
-      "optionalDependencies": [],
-      "env": [],
-      "from": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\plugin.js",
-      "path": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.5.0@egg-onerror",
-      "version": "1.5.0"
-    },
     "session": {
       "enable": true,
       "package": "egg-session",
@@ -314,42 +358,9 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\plugin.js",
-      "path": "F:\\2017\\egg\\egg-practice\\node_modules\\.2.1.1@egg-session",
+      "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@1.12.0@egg\\config\\plugin.js",
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-session@2.1.1@egg-session",
       "version": "2.1.1"
-    },
-    "i18n": {
-      "enable": true,
-      "package": "egg-i18n",
-      "name": "i18n",
-      "dependencies": [],
-      "optionalDependencies": [],
-      "env": [],
-      "from": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\plugin.js",
-      "path": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.2.0@egg-i18n",
-      "version": "1.2.0"
-    },
-    "watcher": {
-      "enable": true,
-      "package": "egg-watcher",
-      "name": "watcher",
-      "dependencies": [],
-      "optionalDependencies": [],
-      "env": [],
-      "from": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\plugin.js",
-      "path": "F:\\2017\\egg\\egg-practice\\node_modules\\.2.2.0@egg-watcher",
-      "version": "2.2.0"
-    },
-    "multipart": {
-      "enable": true,
-      "package": "egg-multipart",
-      "name": "multipart",
-      "dependencies": [],
-      "optionalDependencies": [],
-      "env": [],
-      "from": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\plugin.js",
-      "path": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.5.0@egg-multipart",
-      "version": "1.5.0"
     },
     "security": {
       "enable": true,
@@ -360,9 +371,68 @@
         "session"
       ],
       "env": [],
-      "from": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\plugin.js",
-      "path": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.12.1@egg-security",
+      "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@1.12.0@egg\\config\\plugin.js",
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@1.12.1@egg-security",
       "version": "1.12.1"
+    },
+    "jsonp": {
+      "enable": true,
+      "package": "egg-jsonp",
+      "name": "jsonp",
+      "dependencies": [],
+      "optionalDependencies": [
+        "security"
+      ],
+      "env": [],
+      "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@1.12.0@egg\\config\\plugin.js",
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-jsonp@1.2.2@egg-jsonp",
+      "version": "1.2.2"
+    },
+    "onerror": {
+      "enable": true,
+      "package": "egg-onerror",
+      "name": "onerror",
+      "dependencies": [],
+      "optionalDependencies": [
+        "jsonp"
+      ],
+      "env": [],
+      "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@1.12.0@egg\\config\\plugin.js",
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-onerror@1.6.0@egg-onerror",
+      "version": "1.6.0"
+    },
+    "i18n": {
+      "enable": true,
+      "package": "egg-i18n",
+      "name": "i18n",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@1.12.0@egg\\config\\plugin.js",
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-i18n@1.2.0@egg-i18n",
+      "version": "1.2.0"
+    },
+    "watcher": {
+      "enable": true,
+      "package": "egg-watcher",
+      "name": "watcher",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@1.12.0@egg\\config\\plugin.js",
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-watcher@2.2.0@egg-watcher",
+      "version": "2.2.0"
+    },
+    "multipart": {
+      "enable": true,
+      "package": "egg-multipart",
+      "name": "multipart",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@1.12.0@egg\\config\\plugin.js",
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-multipart@1.5.1@egg-multipart",
+      "version": "1.5.1"
     },
     "development": {
       "enable": true,
@@ -374,10 +444,10 @@
       "env": [
         "local"
       ],
-      "from": "F:\\2017\\egg\\egg-practice\\config\\plugin.js",
+      "from": "G:\\2017\\egg\\egg-practice\\config\\plugin.js",
       "package": "egg-development",
-      "path": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.3.1@egg-development",
-      "version": "1.3.1"
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-development@1.3.2@egg-development",
+      "version": "1.3.2"
     },
     "schedule": {
       "enable": true,
@@ -386,8 +456,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\plugin.js",
-      "path": "F:\\2017\\egg\\egg-practice\\node_modules\\.2.6.0@egg-schedule",
+      "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@1.12.0@egg\\config\\plugin.js",
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-schedule@2.6.0@egg-schedule",
       "version": "2.6.0"
     },
     "logrotator": {
@@ -399,9 +469,9 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\plugin.js",
-      "path": "F:\\2017\\egg\\egg-practice\\node_modules\\.2.2.3@egg-logrotator",
-      "version": "2.2.3"
+      "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@1.12.0@egg\\config\\plugin.js",
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-logrotator@2.3.1@egg-logrotator",
+      "version": "2.3.1"
     },
     "static": {
       "enable": true,
@@ -410,22 +480,9 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\plugin.js",
-      "path": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.4.1@egg-static",
+      "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@1.12.0@egg\\config\\plugin.js",
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-static@1.4.1@egg-static",
       "version": "1.4.1"
-    },
-    "jsonp": {
-      "enable": true,
-      "package": "egg-jsonp",
-      "name": "jsonp",
-      "dependencies": [],
-      "optionalDependencies": [
-        "security"
-      ],
-      "env": [],
-      "from": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\plugin.js",
-      "path": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.2.1@egg-jsonp",
-      "version": "1.2.1"
     },
     "view": {
       "enable": true,
@@ -434,8 +491,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.10.0@egg\\config\\plugin.js",
-      "path": "F:\\2017\\egg\\egg-practice\\node_modules\\.1.1.2@egg-view",
+      "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@1.12.0@egg\\config\\plugin.js",
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-view@1.1.2@egg-view",
       "version": "1.1.2"
     },
     "nunjucks": {
@@ -448,8 +505,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "F:\\2017\\egg\\egg-practice\\config\\plugin.js",
-      "path": "F:\\2017\\egg\\egg-practice\\node_modules\\.2.1.4@egg-view-nunjucks",
+      "from": "G:\\2017\\egg\\egg-practice\\config\\plugin.js",
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-view-nunjucks@2.1.4@egg-view-nunjucks",
       "version": "2.1.4"
     },
     "sequelize": {
@@ -459,9 +516,20 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "F:\\2017\\egg\\egg-practice\\config\\plugin.js",
-      "path": "F:\\2017\\egg\\egg-practice\\node_modules\\.3.1.0@egg-sequelize",
+      "from": "G:\\2017\\egg\\egg-practice\\config\\plugin.js",
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-sequelize@3.1.0@egg-sequelize",
       "version": "3.1.0"
+    },
+    "redis": {
+      "enable": true,
+      "package": "egg-redis",
+      "name": "redis",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "G:\\2017\\egg\\egg-practice\\config\\plugin.js",
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-redis@1.0.2@egg-redis",
+      "version": "1.0.2"
     }
   }
 }

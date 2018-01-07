@@ -10,5 +10,8 @@ module.exports = appInfo => {
   config.encrypt = {
     cryptKey: "eggPractice"
   };
+  config.signup = {
+    signup: true
+  }
   return config;
 };

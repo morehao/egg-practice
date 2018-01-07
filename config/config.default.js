@@ -6,13 +6,18 @@ module.exports = appInfo => {
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1508664426172_7315';
 
-  // add your config here
-  config.middleware = [];
+  // 配置需要的中间件，数组顺序即为中间件的加载顺序
+  config.middleware = ['test', 'gzip'];
+
+  //配置gzip中间件的配置
+  config.gzip = {
+    threshold: 1024, //小于1k的响应不压缩
+  };
 
   //添加view配置
   config.view = {
-    defaultViewEngine:'nunjucks',
-    mapping:{
+    defaultViewEngine: 'nunjucks',
+    mapping: {
       '.tpl': 'nunjucks',
     }
   }
@@ -26,21 +31,57 @@ module.exports = appInfo => {
   //     sessionName: 'csrfToken', // Session 中的字段名，默认为 csrfToken
   //   },
   // };
-  
+
   //关闭csrf验证
   config.security = {
-    csrf:{
+    csrf: {
       enable: false
     }
   }
-//设置数据库基础信息
+  //设置数据库基础信息
   config.sequelize = {
     dialect: 'mysql', // support: mysql, mariadb, postgres, mssql
     database: 'egg-practice',
-    host: 'localhost',
+    // host: 'localhost',
+    host: '192.168.2.138',
     port: '3306',
     username: 'root',
     password: 'root',
+    logging: false
+  };
+  // 配置redis
+  config.redis = { //redis 簇
+    clients: {
+      // 自定义客户端
+      session: {
+        host: '127.0.0.1',
+        port: 6379,
+        password: '',
+        db: 0
+      },
+
+      user: {
+        host: '127.0.0.1',
+        port: 6379,
+        password: '',
+        db: 1
+      },
+
+      interaction: {
+        host: '127.0.0.1',
+        port: 6379,
+        password: '',
+        db: 2
+      },
+
+      test: {
+        host: '127.0.0.1',
+        port: 6379,
+        password: '',
+        db: 3
+      }
+
+    }
   };
   return config;
 };

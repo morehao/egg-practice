@@ -9,12 +9,16 @@
     "async": "^2.5.0",
     "co": "^4.6.0",
     "crypto": "^1.0.1",
-    "egg": "^1.9.0",
+    "egg": "^2.2.0",
     "egg-mysql": "^3.0.0",
+    "egg-redis": "^1.0.2",
     "egg-scripts": "^2.1.0",
     "egg-sequelize": "^3.1.0",
     "egg-view-nunjucks": "^2.1.4",
-    "mysql2": "^1.4.2"
+    "fs": "^0.0.1-security",
+    "koa-is-json": "^1.0.0",
+    "mysql2": "^1.4.2",
+    "zlib": "^1.0.5"
   },
   "devDependencies": {
     "autod": "^2.10.0",

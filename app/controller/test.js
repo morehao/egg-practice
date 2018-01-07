@@ -18,6 +18,23 @@ module.exports = app=>{
             console.log('body:',body);
             this.ctx.body = {data: 'test ajax success'};
         }
+
+        //fs异步编程测试
+        async fs(ctx){
+            console.log('fs');
+            const pathname = './test.json';
+            const result = await ctx.service.test.fs(pathname);
+            console.log('service end');
+            console.log('result:',result);
+        }
+
+        //middlewares post测试
+        async middlewares(ctx){
+            console.log('middlewares post');
+            ctx.body = {
+                data: true
+            }
+        }
     }
 
     return TestController;

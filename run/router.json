@@ -1,0 +1,206 @@
+[
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/",
+    "regexp": "/^(?:\\/(?=$))?$/",
+    "stack": [
+      "anonymous",
+      "G:\\2017\\egg\\egg-practice\\app\\controller\\home.js#HomeController.index()"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/test",
+    "regexp": "/^\\/test(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\2017\\egg\\egg-practice\\app\\controller\\test.js#TestController.index()"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/test/form",
+    "regexp": "/^\\/test\\/form(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\2017\\egg\\egg-practice\\app\\controller\\test.js#TestController.form()"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/test/ajax",
+    "regexp": "/^\\/test\\/ajax(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\2017\\egg\\egg-practice\\app\\controller\\test.js#TestController.ajax()"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/test/middlewares",
+    "regexp": "/^\\/test\\/middlewares(?:\\/(?=$))?$/",
+    "stack": [
+      "anonymous",
+      "G:\\2017\\egg\\egg-practice\\app\\controller\\test.js#TestController.middlewares()"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/test/fs",
+    "regexp": "/^\\/test\\/fs(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\2017\\egg\\egg-practice\\app\\controller\\test.js#TestController.fs()"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/findInclude",
+    "regexp": "/^\\/findInclude(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\2017\\egg\\egg-practice\\app\\controller\\home.js#HomeController.findInclude()"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/findSigle",
+    "regexp": "/^\\/findSigle(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\2017\\egg\\egg-practice\\app\\controller\\home.js#HomeController.findSigle()"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/create",
+    "regexp": "/^\\/create(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\2017\\egg\\egg-practice\\app\\controller\\home.js#HomeController.create()"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/delete",
+    "regexp": "/^\\/delete(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\2017\\egg\\egg-practice\\app\\controller\\home.js#HomeController.delete()"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/findInArray",
+    "regexp": "/^\\/findInArray(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\2017\\egg\\egg-practice\\app\\controller\\home.js#HomeController.findInArray()"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/update",
+    "regexp": "/^\\/update(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\2017\\egg\\egg-practice\\app\\controller\\home.js#HomeController.update()"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/user/signup",
+    "regexp": "/^\\/user\\/signup(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\2017\\egg\\egg-practice\\app\\controller\\user.js#UserController.signup()"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/user/telYanzheng",
+    "regexp": "/^\\/user\\/telYanzheng(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\2017\\egg\\egg-practice\\app\\controller\\user.js#UserController.telYanzheng()"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/user/msgCaptcha",
+    "regexp": "/^\\/user\\/msgCaptcha(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\2017\\egg\\egg-practice\\app\\controller\\user.js#UserController.msgCaptchaCheck()"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/user/finishSignup",
+    "regexp": "/^\\/user\\/finishSignup(?:\\/(?=$))?$/",
+    "stack": [
+      "G:\\2017\\egg\\egg-practice\\app\\controller\\user.js#UserController.finishSignup()"
+    ]
+  }
+]

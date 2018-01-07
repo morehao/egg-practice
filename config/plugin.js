@@ -20,6 +20,11 @@ exports.sequelize = {
     enable: true,
     package: 'egg-sequelize'
 }
+//开启redis
+exports.redis = {
+  enable: true,
+  package: 'egg-redis'
+}
 // 开启development插件，修改后端代码后，会自动重启 Worker 进程
 exports.development = {
   enable: true,

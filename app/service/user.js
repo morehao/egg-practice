@@ -4,8 +4,8 @@ const SMSClient = require('@alicloud/sms-sdk');
 const crypto = require('crypto');
 
 
-const accessKeyID = process.env.ALI_SMS_ACCESSKEYID;
-const accessKeySecret = process.env.ALI_SMS_ACCESSKEYSECRET;
+const accessKeyID = "----";
+const accessKeySecret = "-----";
 
 
 module.exports = app => {
@@ -13,7 +13,7 @@ module.exports = app => {
     const key = app.config.encrypt.cryptKey;
     class userService extends app.Service {
         //获取短信验证码
-        async telYanzheng(tel,ctx) {
+        async telYanzheng(tel, ctx) {
             console.log('tel:', tel);
             //生成随机验证码
             var range = function (start, end) {
@@ -33,50 +33,53 @@ module.exports = app => {
                 accessKeyId,
                 secretAccessKey
             })
+            console.log('1');
             //发送短信
-            smsClient.sendSMS({
-                PhoneNumbers: tel,
-                recNum: tel,
-                SignName: '瀚图影像',
-                TemplateCode: 'SMS_77470056',
-                TemplateParam: `{"number":${randomstr},"product":"云通信"}`
-            }).then(function (res) {
-                let {Code} = res
-                if (Code === 'OK') {
-                    //处理返回参数
-                    console.log('res:',res);
-                }
-            }, function (err) {
-                console.log('err',err);
-            })
+            try {
+                let s = await smsClient.sendSMS({
+                    PhoneNumbers: tel,
+                    recNum: tel,
+                    SignName: '瀚图影像',
+                    TemplateCode: 'SMS_77470056',
+                    TemplateParam: `{"number":${randomstr},"product":"云通信"}`
+                })
+                console.log('s:',s.Code);
+                // ctx.session.Message = s.Message;
+            } catch (error) {
+                console.log('error:',error.data.Message);
+                ctx.session.Messgae = error.data.Message;
+                // return error.data.Message;
+            }
+            console.log('2');
+            console.log('session:',ctx.session.Messgae);
             console.log('end');
             ctx.session.randomstr = randomstr;
             return randomstr;
         };
         //校验输入的短信验证码
-        * msgCaptchaCheck(randomstr,msgCaptcha){
-            if(randomstr == msgCaptcha){
+        * msgCaptchaCheck(randomstr, msgCaptcha) {
+            if (randomstr == msgCaptcha) {
                 return true;
-            }else{
+            } else {
                 return false;
             }
         };
         //密码加密
-        * encrypted(password){
-            console.log('password:',password);
-            console.log('key:',key);
-            let cipher = crypto.createCipher('bf',key);
+        * encrypted(password) {
+            console.log('password:', password);
+            console.log('key:', key);
+            let cipher = crypto.createCipher('bf', key);
             let newPsd = "";
-            newPsd += cipher.update(password,"utf8","hex");
+            newPsd += cipher.update(password, "utf8", "hex");
             newPsd += cipher.final("hex");
             return newPsd;
         };
         //密码解密
-        * decrypted(password){
-            console.log('password:',password);
-            let decipher = crypto.createDecipher("bf",key);
+        * decrypted(password) {
+            console.log('password:', password);
+            let decipher = crypto.createDecipher("bf", key);
             let oldPsd = "";
-            oldPsd += decipher.update(password,"hex","utf8");
+            oldPsd += decipher.update(password, "hex", "utf8");
             oldPsd += decipher.final("utf8");
             return oldPsd;
         }

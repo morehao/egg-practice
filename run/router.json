@@ -9,8 +9,8 @@
     "path": "/",
     "regexp": "/^(?:\\/(?=$))?$/",
     "stack": [
-      "anonymous",
-      "G:\\2017\\egg\\egg-practice\\app\\controller\\home.js#HomeController.index()"
+      "test",
+      "wrappedController"
     ]
   },
   {
@@ -23,7 +23,7 @@
     "path": "/test",
     "regexp": "/^\\/test(?:\\/(?=$))?$/",
     "stack": [
-      "G:\\2017\\egg\\egg-practice\\app\\controller\\test.js#TestController.index()"
+      "wrappedController"
     ]
   },
   {
@@ -36,7 +36,7 @@
     "path": "/test/form",
     "regexp": "/^\\/test\\/form(?:\\/(?=$))?$/",
     "stack": [
-      "G:\\2017\\egg\\egg-practice\\app\\controller\\test.js#TestController.form()"
+      "wrappedController"
     ]
   },
   {
@@ -48,7 +48,7 @@
     "path": "/test/ajax",
     "regexp": "/^\\/test\\/ajax(?:\\/(?=$))?$/",
     "stack": [
-      "G:\\2017\\egg\\egg-practice\\app\\controller\\test.js#TestController.ajax()"
+      "wrappedController"
     ]
   },
   {
@@ -60,8 +60,8 @@
     "path": "/test/middlewares",
     "regexp": "/^\\/test\\/middlewares(?:\\/(?=$))?$/",
     "stack": [
-      "anonymous",
-      "G:\\2017\\egg\\egg-practice\\app\\controller\\test.js#TestController.middlewares()"
+      "test",
+      "wrappedController"
     ]
   },
   {
@@ -73,7 +73,7 @@
     "path": "/test/fs",
     "regexp": "/^\\/test\\/fs(?:\\/(?=$))?$/",
     "stack": [
-      "G:\\2017\\egg\\egg-practice\\app\\controller\\test.js#TestController.fs()"
+      "wrappedController"
     ]
   },
   {
@@ -86,7 +86,7 @@
     "path": "/findInclude",
     "regexp": "/^\\/findInclude(?:\\/(?=$))?$/",
     "stack": [
-      "G:\\2017\\egg\\egg-practice\\app\\controller\\home.js#HomeController.findInclude()"
+      "wrappedController"
     ]
   },
   {
@@ -99,7 +99,7 @@
     "path": "/findSigle",
     "regexp": "/^\\/findSigle(?:\\/(?=$))?$/",
     "stack": [
-      "G:\\2017\\egg\\egg-practice\\app\\controller\\home.js#HomeController.findSigle()"
+      "wrappedController"
     ]
   },
   {
@@ -112,7 +112,7 @@
     "path": "/create",
     "regexp": "/^\\/create(?:\\/(?=$))?$/",
     "stack": [
-      "G:\\2017\\egg\\egg-practice\\app\\controller\\home.js#HomeController.create()"
+      "wrappedController"
     ]
   },
   {
@@ -125,7 +125,7 @@
     "path": "/delete",
     "regexp": "/^\\/delete(?:\\/(?=$))?$/",
     "stack": [
-      "G:\\2017\\egg\\egg-practice\\app\\controller\\home.js#HomeController.delete()"
+      "wrappedController"
     ]
   },
   {
@@ -138,7 +138,7 @@
     "path": "/findInArray",
     "regexp": "/^\\/findInArray(?:\\/(?=$))?$/",
     "stack": [
-      "G:\\2017\\egg\\egg-practice\\app\\controller\\home.js#HomeController.findInArray()"
+      "wrappedController"
     ]
   },
   {
@@ -151,7 +151,7 @@
     "path": "/update",
     "regexp": "/^\\/update(?:\\/(?=$))?$/",
     "stack": [
-      "G:\\2017\\egg\\egg-practice\\app\\controller\\home.js#HomeController.update()"
+      "wrappedController"
     ]
   },
   {
@@ -164,7 +164,7 @@
     "path": "/user/signup",
     "regexp": "/^\\/user\\/signup(?:\\/(?=$))?$/",
     "stack": [
-      "G:\\2017\\egg\\egg-practice\\app\\controller\\user.js#UserController.signup()"
+      "wrappedController"
     ]
   },
   {
@@ -176,7 +176,7 @@
     "path": "/user/telYanzheng",
     "regexp": "/^\\/user\\/telYanzheng(?:\\/(?=$))?$/",
     "stack": [
-      "G:\\2017\\egg\\egg-practice\\app\\controller\\user.js#UserController.telYanzheng()"
+      "wrappedController"
     ]
   },
   {
@@ -188,7 +188,7 @@
     "path": "/user/msgCaptcha",
     "regexp": "/^\\/user\\/msgCaptcha(?:\\/(?=$))?$/",
     "stack": [
-      "G:\\2017\\egg\\egg-practice\\app\\controller\\user.js#UserController.msgCaptchaCheck()"
+      "wrappedController"
     ]
   },
   {
@@ -200,7 +200,56 @@
     "path": "/user/finishSignup",
     "regexp": "/^\\/user\\/finishSignup(?:\\/(?=$))?$/",
     "stack": [
-      "G:\\2017\\egg\\egg-practice\\app\\controller\\user.js#UserController.finishSignup()"
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/liked",
+    "regexp": "/^\\/liked(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/liked/redisSave",
+    "regexp": "/^\\/liked\\/redisSave(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/liked/redisGet",
+    "regexp": "/^\\/liked\\/redisGet(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/liked/insert",
+    "regexp": "/^\\/liked\\/insert(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
     ]
   }
 ]

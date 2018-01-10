@@ -4,7 +4,6 @@ const zlib = require('zlib');
 
 module.exports = options => {
     return async function gzip(ctx, next) {
-        console.log('middlewares');
         await next();
 
         //后续中间件执行完成后将响应体转换成gzip
@@ -21,6 +20,5 @@ module.exports = options => {
         stream.end(body);
         ctx.body = stream;
         ctx.set('Content-Encoding', 'gzip');
-        console.log('end');
     }
 }

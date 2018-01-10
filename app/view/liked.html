@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>点赞测试</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <button id="redisSave">redis存</button>
+    <br>
+    <button id="redisGet">redis取</button>
+    <br>
+    <button id="liked">liked测试</button>
+    <br>
+    <!-- 姓名年龄、录入 -->
+    <div>
+        姓名：
+        <input name="name" id="name"> 年龄：
+        <input name="age" id="age">
+        <button id="insert">录入</button>
+    </div>
+    <script src="/public/js/jquery-3.2.1.min.js"></script>
+    <script>
+        //在redis中存数据
+        $('#redisSave').click(function () {
+            console.log('redis测试');
+            $.ajax({
+                type: 'post',
+                url: '/liked/redisSave',
+                success: function (res) {
+                    console.log('res:', res);
+                },
+                err: function () {
+
+                }
+            })
+        })
+        //从redis中取数据
+        $('#redisGet').click(function () {
+            console.log('redis测试');
+            $.ajax({
+                type: 'post',
+                url: '/liked/redisGet',
+                success: function (res) {
+                    console.log('res:', res);
+                },
+                err: function () {
+
+                }
+            })
+        })
+        //姓名年龄、录入
+        $('#insert').click(function () {
+            const name = $('#name').val();
+            const age = $('#age').val();
+            console.log('name:',name);
+            console.log('age:',age);
+            console.log('redis测试');
+            $.ajax({
+                type: 'post',
+                url: '/liked/insert',
+                data: {name: name,age: age},
+                success: function (res) {
+                    console.log('res:', res);
+                },
+                err: function () {
+
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -18,6 +18,7 @@
     "fs": "^0.0.1-security",
     "koa-is-json": "^1.0.0",
     "mysql2": "^1.4.2",
+    "uuid": "^3.1.0",
     "zlib": "^1.0.5"
   },
   "devDependencies": {

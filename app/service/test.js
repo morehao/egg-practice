@@ -13,9 +13,7 @@ let readFile = function(pathname){
 module.exports = app => {
     class testService extends app.Service {
         async fs(pathname) {
-            console.log('pathname:', pathname);
             let bin = await readFile(pathname);
-            console.log('bin:',bin);
             if (bin[0] === 0xEF && bin[1] === 0xBB && bin[2] === 0xBF) {
                 bin = bin.slice(3);
             }

@@ -5,13 +5,12 @@ module.exports = app => {
 
   const Post = app.model.define('post', {
     id: {
-      type: INTEGER,
+      type:  STRING(120),
       primaryKey: true,
-      autoIncrement: true,
     },
     title: STRING(30),
     content: STRING(255),
-    user_id: INTEGER,
+    user_id: STRING(120),
     created_at: DATE,
     updated_at: DATE,
   });

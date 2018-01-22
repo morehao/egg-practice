@@ -79,21 +79,25 @@
     "i18n": {
       "defaultLocale": "en_US",
       "dirs": [
-        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-session@2.1.1@egg-session\\config\\locales",
-        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@1.12.1@egg-security\\config\\locales",
-        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-jsonp@1.2.2@egg-jsonp\\config\\locales",
-        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-onerror@1.6.0@egg-onerror\\config\\locales",
-        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-i18n@1.2.0@egg-i18n\\config\\locales",
-        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-watcher@2.2.0@egg-watcher\\config\\locales",
-        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-multipart@1.5.1@egg-multipart\\config\\locales",
-        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-development@1.3.2@egg-development\\config\\locales",
-        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-schedule@2.6.0@egg-schedule\\config\\locales",
-        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-logrotator@2.3.1@egg-logrotator\\config\\locales",
-        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-static@1.4.1@egg-static\\config\\locales",
-        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-view@1.1.2@egg-view\\config\\locales",
+        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-session@3.1.0@egg-session\\config\\locales",
+        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@2.0.0@egg-security\\config\\locales",
+        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\locales",
+        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-onerror@2.0.0@egg-onerror\\config\\locales",
+        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-i18n@2.0.0@egg-i18n\\config\\locales",
+        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-watcher@3.0.0@egg-watcher\\config\\locales",
+        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-multipart@2.0.0@egg-multipart\\config\\locales",
+        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-development@2.1.0@egg-development\\config\\locales",
+        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-schedule@3.1.1@egg-schedule\\config\\locales",
+        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-logrotator@3.0.1@egg-logrotator\\config\\locales",
+        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-static@2.1.0@egg-static\\config\\locales",
+        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-view@2.0.0@egg-view\\config\\locales",
         "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-view-nunjucks@2.1.4@egg-view-nunjucks\\config\\locales",
         "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-sequelize@3.1.0@egg-sequelize\\config\\locales",
         "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-redis@1.0.2@egg-redis\\config\\locales",
+        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-userservice@2.0.0@egg-userservice\\config\\locales",
+        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-userrole@2.0.0@egg-userrole\\config\\locales",
+        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-passport@2.0.1@egg-passport\\config\\locales",
+        "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-passport-qq@0.0.1@egg-passport-qq\\config\\locales",
         "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\locales",
         "G:\\2017\\egg\\egg-practice\\config\\locales"
       ],
@@ -105,8 +109,8 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-watcher@2.2.0@egg-watcher\\lib\\event-sources\\default",
-        "development": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-watcher@2.2.0@egg-watcher\\lib\\event-sources\\development"
+        "default": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-watcher@3.0.0@egg-watcher\\lib\\event-sources\\default",
+        "development": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-watcher@3.0.0@egg-watcher\\lib\\event-sources\\development"
       }
     },
     "multipart": {
@@ -124,7 +128,8 @@
       "watchDirs": [],
       "ignoreDirs": [],
       "fastReady": false,
-      "reloadOnDebug": true
+      "reloadOnDebug": true,
+      "overrideDefault": false
     },
     "logrotator": {
       "filesRotateByHour": null,
@@ -202,6 +207,28 @@
         }
       }
     },
+    "userservice": {
+      "service": {
+        "getUser": "<AsyncFunction getUser>",
+        "getUserId": "<Function getUserId>"
+      }
+    },
+    "userrole": {
+      "failureHandler": "<Function failureHandler>"
+    },
+    "passportQQ": {
+      "clientID": "101436492",
+      "secret": "<String len: 23>",
+      "callbackURL": "/passport/qq/callback",
+      "scope": "get_user_info",
+      "response_type": "code",
+      "key": "101436492",
+      "passReqToCallback": true,
+      "clientSecret": "<String len: 23>",
+      "authorizationURL": "https://graph.qq.com/oauth2.0/authorize",
+      "tokenURL": "https://graph.qq.com/oauth2.0/token",
+      "scopeSeparator": ","
+    },
     "env": "local",
     "name": "egg-practice",
     "keys": "<String len: 31>",
@@ -222,13 +249,18 @@
         "crypto": "^1.0.1",
         "egg": "^2.2.0",
         "egg-mysql": "^3.0.0",
+        "egg-passport": "^2.0.1",
+        "egg-passport-qq": "^0.0.1",
         "egg-redis": "^1.0.2",
         "egg-scripts": "^2.1.0",
         "egg-sequelize": "^3.1.0",
+        "egg-userrole": "^2.0.0",
+        "egg-userservice": "^2.0.0",
         "egg-view-nunjucks": "^2.1.4",
         "fs": "^0.0.1-security",
         "koa-is-json": "^1.0.0",
         "mysql2": "^1.4.2",
+        "query-string": "^5.0.1",
         "uuid": "^3.1.0",
         "zlib": "^1.0.5"
       },
@@ -351,7 +383,10 @@
       "overrideMethod",
       "session",
       "securities",
-      "i18n"
+      "i18n",
+      "userservice",
+      "passportInitialize",
+      "passportSession"
     ],
     "workerStartTimeout": 600000,
     "cluster": {
@@ -377,6 +412,16 @@
     "signup": {
       "signup": true
     },
+    "qqLogin": {
+      "appId": "101436492",
+      "appSecret": "<String len: 32>",
+      "url": "http%3a%2f%2f127.0.0.1%3a7001"
+    },
+    "wechatLogin": {
+      "appId": "wx8b77344021ca3219",
+      "appSecret": "<String len: 32>",
+      "url": "http://webtest.hanfoto.com"
+    },
     "coreMiddlewares": [
       "meta",
       "siteFile",
@@ -386,7 +431,10 @@
       "overrideMethod",
       "session",
       "securities",
-      "i18n"
+      "i18n",
+      "userservice",
+      "passportInitialize",
+      "passportSession"
     ],
     "appMiddlewares": [
       "test",
@@ -418,8 +466,8 @@
       "optionalDependencies": [],
       "env": [],
       "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\plugin.js",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-session@2.1.1@egg-session",
-      "version": "2.1.1"
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-session@3.1.0@egg-session",
+      "version": "3.1.0"
     },
     "security": {
       "enable": true,
@@ -431,8 +479,8 @@
       ],
       "env": [],
       "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\plugin.js",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@1.12.1@egg-security",
-      "version": "1.12.1"
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@2.0.0@egg-security",
+      "version": "2.0.0"
     },
     "jsonp": {
       "enable": true,
@@ -444,8 +492,8 @@
       ],
       "env": [],
       "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\plugin.js",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-jsonp@1.2.2@egg-jsonp",
-      "version": "1.2.2"
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp",
+      "version": "2.0.0"
     },
     "onerror": {
       "enable": true,
@@ -457,8 +505,8 @@
       ],
       "env": [],
       "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\plugin.js",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-onerror@1.6.0@egg-onerror",
-      "version": "1.6.0"
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-onerror@2.0.0@egg-onerror",
+      "version": "2.0.0"
     },
     "i18n": {
       "enable": true,
@@ -468,8 +516,8 @@
       "optionalDependencies": [],
       "env": [],
       "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\plugin.js",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-i18n@1.2.0@egg-i18n",
-      "version": "1.2.0"
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-i18n@2.0.0@egg-i18n",
+      "version": "2.0.0"
     },
     "watcher": {
       "enable": true,
@@ -479,8 +527,8 @@
       "optionalDependencies": [],
       "env": [],
       "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\plugin.js",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-watcher@2.2.0@egg-watcher",
-      "version": "2.2.0"
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-watcher@3.0.0@egg-watcher",
+      "version": "3.0.0"
     },
     "multipart": {
       "enable": true,
@@ -490,8 +538,8 @@
       "optionalDependencies": [],
       "env": [],
       "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\plugin.js",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-multipart@1.5.1@egg-multipart",
-      "version": "1.5.1"
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-multipart@2.0.0@egg-multipart",
+      "version": "2.0.0"
     },
     "development": {
       "enable": true,
@@ -505,8 +553,8 @@
       ],
       "from": "G:\\2017\\egg\\egg-practice\\config\\plugin.js",
       "package": "egg-development",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-development@1.3.2@egg-development",
-      "version": "1.3.2"
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-development@2.1.0@egg-development",
+      "version": "2.1.0"
     },
     "schedule": {
       "enable": true,
@@ -516,8 +564,8 @@
       "optionalDependencies": [],
       "env": [],
       "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\plugin.js",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-schedule@2.6.0@egg-schedule",
-      "version": "2.6.0"
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-schedule@3.1.1@egg-schedule",
+      "version": "3.1.1"
     },
     "logrotator": {
       "enable": true,
@@ -529,8 +577,8 @@
       "optionalDependencies": [],
       "env": [],
       "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\plugin.js",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-logrotator@2.3.1@egg-logrotator",
-      "version": "2.3.1"
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-logrotator@3.0.1@egg-logrotator",
+      "version": "3.0.1"
     },
     "static": {
       "enable": true,
@@ -540,8 +588,8 @@
       "optionalDependencies": [],
       "env": [],
       "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\plugin.js",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-static@1.4.1@egg-static",
-      "version": "1.4.1"
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-static@2.1.0@egg-static",
+      "version": "2.1.0"
     },
     "view": {
       "enable": true,
@@ -551,8 +599,8 @@
       "optionalDependencies": [],
       "env": [],
       "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\plugin.js",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-view@1.1.2@egg-view",
-      "version": "1.1.2"
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-view@2.0.0@egg-view",
+      "version": "2.0.0"
     },
     "nunjucks": {
       "enable": true,
@@ -589,6 +637,52 @@
       "from": "G:\\2017\\egg\\egg-practice\\config\\plugin.js",
       "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-redis@1.0.2@egg-redis",
       "version": "1.0.2"
+    },
+    "userservice": {
+      "enable": true,
+      "package": "egg-userservice",
+      "name": "userservice",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "G:\\2017\\egg\\egg-practice\\config\\plugin.js",
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-userservice@2.0.0@egg-userservice",
+      "version": "2.0.0"
+    },
+    "userrole": {
+      "package": "egg-userrole",
+      "enable": true,
+      "name": "userrole",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "G:\\2017\\egg\\egg-practice\\config\\plugin.js",
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-userrole@2.0.0@egg-userrole",
+      "version": "2.0.0"
+    },
+    "passport": {
+      "enable": true,
+      "package": "egg-passport",
+      "name": "passport",
+      "dependencies": [
+        "session"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "G:\\2017\\egg\\egg-practice\\config\\plugin.js",
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-passport@2.0.1@egg-passport",
+      "version": "2.0.1"
+    },
+    "passportQQ": {
+      "enable": true,
+      "package": "egg-passport-qq",
+      "name": "passportQQ",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "G:\\2017\\egg\\egg-practice\\config\\plugin.js",
+      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-passport-qq@0.0.1@egg-passport-qq",
+      "version": "0.0.1"
     }
   }
 }

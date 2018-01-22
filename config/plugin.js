@@ -17,8 +17,8 @@ exports.mysql = {
 
 //开启egg-sequelize插件
 exports.sequelize = {
-    enable: true,
-    package: 'egg-sequelize'
+  enable: true,
+  package: 'egg-sequelize'
 }
 //开启redis
 exports.redis = {
@@ -29,4 +29,19 @@ exports.redis = {
 exports.development = {
   enable: true,
   package: 'egg-development',
+};
+exports.userservice = {
+  enable: true,
+  package: 'egg-userservice',
+};
+exports.userrole = {
+  package: 'egg-userrole',
+};
+exports.passport = {
+  enable: true,
+  package: 'egg-passport',
+};
+exports.passportQQ = {
+  enable: true,
+  package: 'egg-passport-qq',
 };

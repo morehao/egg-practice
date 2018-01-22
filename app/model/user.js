@@ -5,14 +5,12 @@ module.exports = app => {
 
   const User = app.model.define('user', {
     id: {
-      type: INTEGER,
+      type: STRING(120),
       primaryKey: true,
-      autoIncrement: true,
+      allowNull: false,
     },
     name: STRING(30),
-    age: INTEGER,
-    created_at: DATE,
-    updated_at: DATE,
+    age: INTEGER
   });
 
   User.prototype.associate = function() {

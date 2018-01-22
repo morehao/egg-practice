@@ -34,5 +34,15 @@ module.exports = app => {
   //将数据从redis中取出
   app.post('/liked/redisGet', 'liked.redisGet');
   //录入姓名和年龄
-  app.post('/liked/insert','liked.insert');
+  app.post('/liked/insert', 'liked.insert');
+
+  //添加user
+  app.get('/user/user', 'user.user');
+  app.post('/user/userAdd', 'user.userAdd');
+  //QQ登录
+  app.get('/user/login', 'user.login');
+  //QQ登录获取code
+  app.get('/user/getQcode', 'user.getQcode');
+  //微信登录获取code
+  app.get('/user/getWcode', 'user.getWcode');
 };

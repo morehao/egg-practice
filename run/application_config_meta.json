@@ -9,52 +9,52 @@
     "mapping": {
       ".tpl": "G:\\2017\\egg\\egg-practice\\config\\config.default.js"
     },
-    "root": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-view@1.1.2@egg-view\\config\\config.default.js",
-    "cache": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-view@1.1.2@egg-view\\config\\config.local.js",
-    "defaultExtension": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-view@1.1.2@egg-view\\config\\config.default.js"
+    "root": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-view@2.0.0@egg-view\\config\\config.default.js",
+    "cache": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-view@2.0.0@egg-view\\config\\config.local.js",
+    "defaultExtension": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-view@2.0.0@egg-view\\config\\config.default.js"
   },
   "security": {
     "csrf": {
       "enable": "G:\\2017\\egg\\egg-practice\\config\\config.default.js",
-      "useSession": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@1.12.1@egg-security\\config\\config.default.js",
-      "ignoreJSON": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@1.12.1@egg-security\\config\\config.default.js",
-      "cookieName": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@1.12.1@egg-security\\config\\config.default.js",
-      "sessionName": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@1.12.1@egg-security\\config\\config.default.js",
-      "headerName": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@1.12.1@egg-security\\config\\config.default.js",
-      "bodyName": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@1.12.1@egg-security\\config\\config.default.js",
-      "queryName": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@1.12.1@egg-security\\config\\config.default.js"
+      "useSession": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@2.0.0@egg-security\\config\\config.default.js",
+      "ignoreJSON": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@2.0.0@egg-security\\config\\config.default.js",
+      "cookieName": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@2.0.0@egg-security\\config\\config.default.js",
+      "sessionName": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@2.0.0@egg-security\\config\\config.default.js",
+      "headerName": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@2.0.0@egg-security\\config\\config.default.js",
+      "bodyName": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@2.0.0@egg-security\\config\\config.default.js",
+      "queryName": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@2.0.0@egg-security\\config\\config.default.js"
     },
-    "domainWhiteList": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@1.12.1@egg-security\\config\\config.default.js",
-    "protocolWhiteList": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@1.12.1@egg-security\\config\\config.default.js",
-    "defaultMiddleware": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@1.12.1@egg-security\\config\\config.default.js",
+    "domainWhiteList": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@2.0.0@egg-security\\config\\config.default.js",
+    "protocolWhiteList": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@2.0.0@egg-security\\config\\config.default.js",
+    "defaultMiddleware": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@2.0.0@egg-security\\config\\config.default.js",
     "xframe": {
-      "enable": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@1.12.1@egg-security\\config\\config.default.js",
-      "value": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@1.12.1@egg-security\\config\\config.default.js"
+      "enable": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@2.0.0@egg-security\\config\\config.default.js",
+      "value": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@2.0.0@egg-security\\config\\config.default.js"
     },
     "hsts": {
-      "enable": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@1.12.1@egg-security\\config\\config.local.js",
-      "maxAge": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@1.12.1@egg-security\\config\\config.default.js",
-      "includeSubdomains": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@1.12.1@egg-security\\config\\config.default.js"
+      "enable": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@2.0.0@egg-security\\config\\config.local.js",
+      "maxAge": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@2.0.0@egg-security\\config\\config.default.js",
+      "includeSubdomains": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@2.0.0@egg-security\\config\\config.default.js"
     },
     "dta": {
-      "enable": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@1.12.1@egg-security\\config\\config.default.js"
+      "enable": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@2.0.0@egg-security\\config\\config.default.js"
     },
     "methodnoallow": {
-      "enable": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@1.12.1@egg-security\\config\\config.default.js"
+      "enable": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@2.0.0@egg-security\\config\\config.default.js"
     },
     "noopen": {
-      "enable": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@1.12.1@egg-security\\config\\config.default.js"
+      "enable": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@2.0.0@egg-security\\config\\config.default.js"
     },
     "nosniff": {
-      "enable": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@1.12.1@egg-security\\config\\config.default.js"
+      "enable": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@2.0.0@egg-security\\config\\config.default.js"
     },
     "xssProtection": {
-      "enable": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@1.12.1@egg-security\\config\\config.default.js",
-      "value": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@1.12.1@egg-security\\config\\config.default.js"
+      "enable": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@2.0.0@egg-security\\config\\config.default.js",
+      "value": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@2.0.0@egg-security\\config\\config.default.js"
     },
     "csp": {
-      "enable": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@1.12.1@egg-security\\config\\config.default.js",
-      "policy": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@1.12.1@egg-security\\config\\config.default.js"
+      "enable": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@2.0.0@egg-security\\config\\config.default.js",
+      "policy": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@2.0.0@egg-security\\config\\config.default.js"
     }
   },
   "sequelize": {
@@ -65,6 +65,14 @@
     "username": "G:\\2017\\egg\\egg-practice\\config\\config.default.js",
     "password": "G:\\2017\\egg\\egg-practice\\config\\config.default.js",
     "logging": "G:\\2017\\egg\\egg-practice\\config\\config.default.js"
+  },
+  "passportQQ": {
+    "key": "G:\\2017\\egg\\egg-practice\\config\\config.default.js",
+    "secret": "G:\\2017\\egg\\egg-practice\\config\\config.default.js",
+    "clientID": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-passport-qq@0.0.1@egg-passport-qq\\config\\config.default.js",
+    "callbackURL": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-passport-qq@0.0.1@egg-passport-qq\\config\\config.default.js",
+    "scope": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-passport-qq@0.0.1@egg-passport-qq\\config\\config.default.js",
+    "response_type": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-passport-qq@0.0.1@egg-passport-qq\\config\\config.default.js"
   },
   "redis": {
     "clients": {
@@ -97,77 +105,94 @@
     "app": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-redis@1.0.2@egg-redis\\config\\config.default.js",
     "agent": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-redis@1.0.2@egg-redis\\config\\config.default.js"
   },
+  "userservice": {
+    "service": {
+      "getUser": "G:\\2017\\egg\\egg-practice\\config\\config.default.js",
+      "getUserId": "G:\\2017\\egg\\egg-practice\\config\\config.default.js"
+    }
+  },
   "encrypt": {
     "cryptKey": "G:\\2017\\egg\\egg-practice\\config\\config.local.js"
   },
   "signup": {
     "signup": "G:\\2017\\egg\\egg-practice\\config\\config.local.js"
   },
+  "qqLogin": {
+    "appId": "G:\\2017\\egg\\egg-practice\\config\\config.local.js",
+    "appSecret": "G:\\2017\\egg\\egg-practice\\config\\config.local.js",
+    "url": "G:\\2017\\egg\\egg-practice\\config\\config.local.js"
+  },
+  "wechatLogin": {
+    "appId": "G:\\2017\\egg\\egg-practice\\config\\config.local.js",
+    "appSecret": "G:\\2017\\egg\\egg-practice\\config\\config.local.js",
+    "url": "G:\\2017\\egg\\egg-practice\\config\\config.local.js"
+  },
   "session": {
-    "maxAge": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-session@2.1.1@egg-session\\config\\config.default.js",
-    "key": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-session@2.1.1@egg-session\\config\\config.default.js",
-    "httpOnly": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-session@2.1.1@egg-session\\config\\config.default.js",
-    "encrypt": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-session@2.1.1@egg-session\\config\\config.default.js"
+    "maxAge": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-session@3.1.0@egg-session\\config\\config.default.js",
+    "key": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-session@3.1.0@egg-session\\config\\config.default.js",
+    "httpOnly": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-session@3.1.0@egg-session\\config\\config.default.js",
+    "encrypt": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-session@3.1.0@egg-session\\config\\config.default.js"
   },
   "helper": {
-    "shtml": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@1.12.1@egg-security\\config\\config.default.js"
+    "shtml": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@2.0.0@egg-security\\config\\config.default.js"
   },
   "jsonp": {
-    "limit": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-jsonp@1.2.2@egg-jsonp\\config\\config.default.js",
-    "callback": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-jsonp@1.2.2@egg-jsonp\\config\\config.default.js",
-    "csrf": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-jsonp@1.2.2@egg-jsonp\\config\\config.default.js"
+    "limit": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js",
+    "callback": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js",
+    "csrf": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js"
   },
   "onerror": {
-    "errorPageUrl": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-onerror@1.6.0@egg-onerror\\config\\config.default.js",
-    "appErrorFilter": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-onerror@1.6.0@egg-onerror\\config\\config.default.js"
+    "errorPageUrl": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-onerror@2.0.0@egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-onerror@2.0.0@egg-onerror\\config\\config.default.js"
   },
   "i18n": {
-    "defaultLocale": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-i18n@1.2.0@egg-i18n\\config\\config.default.js",
-    "dirs": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-i18n@1.2.0@egg-i18n\\config\\config.default.js",
-    "queryField": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-i18n@1.2.0@egg-i18n\\config\\config.default.js",
-    "cookieField": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-i18n@1.2.0@egg-i18n\\config\\config.default.js",
-    "cookieMaxAge": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-i18n@1.2.0@egg-i18n\\config\\config.default.js"
+    "defaultLocale": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-i18n@2.0.0@egg-i18n\\config\\config.default.js",
+    "dirs": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-i18n@2.0.0@egg-i18n\\config\\config.default.js",
+    "queryField": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-i18n@2.0.0@egg-i18n\\config\\config.default.js",
+    "cookieField": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-i18n@2.0.0@egg-i18n\\config\\config.default.js",
+    "cookieMaxAge": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-i18n@2.0.0@egg-i18n\\config\\config.default.js"
   },
   "watcher": {
-    "type": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-watcher@2.2.0@egg-watcher\\config\\config.local.js",
+    "type": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-watcher@3.0.0@egg-watcher\\config\\config.local.js",
     "eventSources": {
-      "default": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-watcher@2.2.0@egg-watcher\\config\\config.default.js",
-      "development": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-watcher@2.2.0@egg-watcher\\config\\config.default.js"
+      "default": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-watcher@3.0.0@egg-watcher\\config\\config.default.js",
+      "development": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-watcher@3.0.0@egg-watcher\\config\\config.default.js"
     }
   },
   "multipart": {
-    "autoFields": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-multipart@1.5.1@egg-multipart\\config\\config.default.js",
-    "defaultCharset": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-multipart@1.5.1@egg-multipart\\config\\config.default.js",
-    "fieldNameSize": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-multipart@1.5.1@egg-multipart\\config\\config.default.js",
-    "fieldSize": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-multipart@1.5.1@egg-multipart\\config\\config.default.js",
-    "fields": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-multipart@1.5.1@egg-multipart\\config\\config.default.js",
-    "fileSize": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-multipart@1.5.1@egg-multipart\\config\\config.default.js",
-    "files": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-multipart@1.5.1@egg-multipart\\config\\config.default.js",
-    "fileExtensions": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-multipart@1.5.1@egg-multipart\\config\\config.default.js",
-    "whitelist": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-multipart@1.5.1@egg-multipart\\config\\config.default.js"
+    "autoFields": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-multipart@2.0.0@egg-multipart\\config\\config.default.js",
+    "defaultCharset": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-multipart@2.0.0@egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-multipart@2.0.0@egg-multipart\\config\\config.default.js",
+    "fieldSize": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-multipart@2.0.0@egg-multipart\\config\\config.default.js",
+    "fields": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-multipart@2.0.0@egg-multipart\\config\\config.default.js",
+    "fileSize": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-multipart@2.0.0@egg-multipart\\config\\config.default.js",
+    "files": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-multipart@2.0.0@egg-multipart\\config\\config.default.js",
+    "fileExtensions": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-multipart@2.0.0@egg-multipart\\config\\config.default.js",
+    "whitelist": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-multipart@2.0.0@egg-multipart\\config\\config.default.js"
   },
   "development": {
-    "watchDirs": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-development@1.3.2@egg-development\\config\\config.default.js",
-    "ignoreDirs": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-development@1.3.2@egg-development\\config\\config.default.js",
-    "fastReady": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-development@1.3.2@egg-development\\config\\config.default.js",
-    "reloadOnDebug": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-development@1.3.2@egg-development\\config\\config.default.js"
+    "watchDirs": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-development@2.1.0@egg-development\\config\\config.default.js",
+    "ignoreDirs": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-development@2.1.0@egg-development\\config\\config.default.js",
+    "fastReady": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-development@2.1.0@egg-development\\config\\config.default.js",
+    "reloadOnDebug": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-development@2.1.0@egg-development\\config\\config.default.js",
+    "overrideDefault": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-development@2.1.0@egg-development\\config\\config.default.js"
   },
   "logrotator": {
-    "filesRotateByHour": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-logrotator@2.3.1@egg-logrotator\\config\\config.default.js",
-    "hourDelimiter": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-logrotator@2.3.1@egg-logrotator\\config\\config.default.js",
-    "filesRotateBySize": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-logrotator@2.3.1@egg-logrotator\\config\\config.default.js",
-    "maxFileSize": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-logrotator@2.3.1@egg-logrotator\\config\\config.default.js",
-    "maxFiles": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-logrotator@2.3.1@egg-logrotator\\config\\config.default.js",
-    "rotateDuration": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-logrotator@2.3.1@egg-logrotator\\config\\config.default.js",
-    "maxDays": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-logrotator@2.3.1@egg-logrotator\\config\\config.default.js"
+    "filesRotateByHour": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-logrotator@3.0.1@egg-logrotator\\config\\config.default.js",
+    "hourDelimiter": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-logrotator@3.0.1@egg-logrotator\\config\\config.default.js",
+    "filesRotateBySize": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-logrotator@3.0.1@egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-logrotator@3.0.1@egg-logrotator\\config\\config.default.js",
+    "maxFiles": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-logrotator@3.0.1@egg-logrotator\\config\\config.default.js",
+    "rotateDuration": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-logrotator@3.0.1@egg-logrotator\\config\\config.default.js",
+    "maxDays": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-logrotator@3.0.1@egg-logrotator\\config\\config.default.js"
   },
   "static": {
-    "prefix": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-static@1.4.1@egg-static\\config\\config.default.js",
-    "dir": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-static@1.4.1@egg-static\\config\\config.default.js",
-    "dynamic": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-static@1.4.1@egg-static\\config\\config.default.js",
-    "preload": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-static@1.4.1@egg-static\\config\\config.default.js",
-    "buffer": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-static@1.4.1@egg-static\\config\\config.default.js",
-    "maxFiles": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-static@1.4.1@egg-static\\config\\config.default.js"
+    "prefix": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-static@2.1.0@egg-static\\config\\config.default.js",
+    "dir": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-static@2.1.0@egg-static\\config\\config.default.js",
+    "dynamic": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-static@2.1.0@egg-static\\config\\config.default.js",
+    "preload": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-static@2.1.0@egg-static\\config\\config.default.js",
+    "buffer": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-static@2.1.0@egg-static\\config\\config.default.js",
+    "maxFiles": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-static@2.1.0@egg-static\\config\\config.default.js"
   },
   "nunjucks": {
     "autoescape": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-view-nunjucks@2.1.4@egg-view-nunjucks\\config\\config.default.js",
@@ -175,6 +200,9 @@
     "trimBlocks": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-view-nunjucks@2.1.4@egg-view-nunjucks\\config\\config.default.js",
     "lstripBlocks": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-view-nunjucks@2.1.4@egg-view-nunjucks\\config\\config.default.js",
     "cache": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-view-nunjucks@2.1.4@egg-view-nunjucks\\config\\config.local.js"
+  },
+  "userrole": {
+    "failureHandler": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-userrole@2.0.0@egg-userrole\\config\\config.default.js"
   },
   "env": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\config.default.js",
   "name": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\config.default.js",
@@ -195,13 +223,18 @@
       "crypto": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\config.default.js",
       "egg": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\config.default.js",
       "egg-mysql": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\config.default.js",
+      "egg-passport": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\config.default.js",
+      "egg-passport-qq": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\config.default.js",
       "egg-redis": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\config.default.js",
       "egg-scripts": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\config.default.js",
       "egg-sequelize": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\config.default.js",
+      "egg-userrole": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\config.default.js",
+      "egg-userservice": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\config.default.js",
       "egg-view-nunjucks": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\config.default.js",
       "fs": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\config.default.js",
       "koa-is-json": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\config.default.js",
       "mysql2": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\config.default.js",
+      "query-string": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\config.default.js",
       "uuid": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\config.default.js",
       "zlib": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\config.default.js"
     },

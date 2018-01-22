@@ -49,6 +49,10 @@ module.exports = appInfo => {
     password: 'root',
     logging: false
   };
+  exports.passportQQ = {
+    key: '101436492',
+    secret: '69c1f07d759b24cb1c50600',
+  };
   // 配置redis
   config.redis = { //redis 簇
     clients: {
@@ -83,5 +87,20 @@ module.exports = appInfo => {
 
     }
   };
+  config.userservice = {
+    service: {
+      async getUser(ctx) {
+        const {ctx} = this;
+        const user = await ctx.model.User.findAll
+        // Retrieve your user data from cookie, redis, db, whatever
+        // For common web applications using cookie, you may get session id with ctx.cookies
+      },
+  
+      getUserId(ctx) {
+        // The way to get userId
+        // eg. return ctx.user && ctx.user.userId
+      }
+    }
+  }
   return config;
 };

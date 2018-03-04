@@ -75,8 +75,8 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-watcher@3.0.0@egg-watcher\\lib\\event-sources\\default",
-        "development": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-watcher@3.0.0@egg-watcher\\lib\\event-sources\\development"
+        "default": "E:\\2018\\practice\\egg-practice\\node_modules\\egg-watcher\\lib\\event-sources\\default",
+        "development": "E:\\2018\\practice\\egg-practice\\node_modules\\egg-watcher\\lib\\event-sources\\development"
       }
     },
     "multipart": {
@@ -97,6 +97,12 @@
       "reloadOnDebug": true,
       "overrideDefault": false
     },
+    "customLogger": {
+      "scheduleLogger": {
+        "consoleLevel": "NONE",
+        "file": "E:\\2018\\practice\\egg-practice\\logs\\egg-practice\\egg-schedule.log"
+      }
+    },
     "logrotator": {
       "filesRotateByHour": null,
       "hourDelimiter": "-",
@@ -108,14 +114,14 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "G:\\2017\\egg\\egg-practice\\app\\public",
+      "dir": "E:\\2018\\practice\\egg-practice\\app\\public",
       "dynamic": true,
       "preload": false,
       "buffer": false,
       "maxFiles": 1000
     },
     "view": {
-      "root": "G:\\2017\\egg\\egg-practice\\app\\view",
+      "root": "E:\\2018\\practice\\egg-practice\\app\\view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "nunjucks",
@@ -133,7 +139,7 @@
     "sequelize": {
       "dialect": "mysql",
       "database": "egg-practice",
-      "host": "192.168.2.138",
+      "host": "127.0.0.1",
       "port": "3306",
       "username": "root",
       "password": "<String len: 4>",
@@ -169,6 +175,15 @@
           "db": 3
         }
       }
+    },
+    "userservice": {
+      "service": {
+        "getUser": "<AsyncFunction getUser>",
+        "getUserId": "<Function getUserId>"
+      }
+    },
+    "userrole": {
+      "failureHandler": "<Function failureHandler>"
     },
     "passportQQ": {
       "clientID": "",
@@ -248,9 +263,9 @@
       "author": "morehao",
       "license": "MIT"
     },
-    "baseDir": "G:\\2017\\egg\\egg-practice",
+    "baseDir": "E:\\2018\\practice\\egg-practice",
     "HOME": "C:\\Users\\moreh",
-    "rundir": "G:\\2017\\egg\\egg-practice\\run",
+    "rundir": "E:\\2018\\practice\\egg-practice\\run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -280,7 +295,7 @@
       }
     },
     "logger": {
-      "dir": "G:\\2017\\egg\\egg-practice\\logs\\egg-practice",
+      "dir": "E:\\2018\\practice\\egg-practice\\logs\\egg-practice",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -354,14 +369,14 @@
       "signup": true
     },
     "qqLogin": {
-      "appId": "101436492",
-      "appSecret": "<String len: 32>",
+      "appId": "123",
+      "appSecret": "<String len: 2>",
       "url": "http%3a%2f%2f127.0.0.1%3a7001"
     },
     "wechatLogin": {
-      "appId": "wx8b77344021ca3219",
-      "appSecret": "<String len: 32>",
-      "url": "http://webtest.hanfoto.com"
+      "appId": "12",
+      "appSecret": "<String len: 2>",
+      "url": "1231"
     },
     "coreMiddlewares": [
       "meta",
@@ -387,8 +402,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\plugin.js",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-session@3.1.0@egg-session",
+      "from": "E:\\2018\\practice\\egg-practice\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\2018\\practice\\egg-practice\\node_modules\\egg-session",
       "version": "3.1.0"
     },
     "security": {
@@ -400,8 +415,8 @@
         "session"
       ],
       "env": [],
-      "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\plugin.js",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-security@2.0.0@egg-security",
+      "from": "E:\\2018\\practice\\egg-practice\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\2018\\practice\\egg-practice\\node_modules\\egg-security",
       "version": "2.0.0"
     },
     "jsonp": {
@@ -413,8 +428,8 @@
         "security"
       ],
       "env": [],
-      "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\plugin.js",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp",
+      "from": "E:\\2018\\practice\\egg-practice\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\2018\\practice\\egg-practice\\node_modules\\egg-jsonp",
       "version": "2.0.0"
     },
     "onerror": {
@@ -426,8 +441,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\plugin.js",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-onerror@2.0.0@egg-onerror",
+      "from": "E:\\2018\\practice\\egg-practice\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\2018\\practice\\egg-practice\\node_modules\\egg-onerror",
       "version": "2.0.0"
     },
     "i18n": {
@@ -437,8 +452,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\plugin.js",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-i18n@2.0.0@egg-i18n",
+      "from": "E:\\2018\\practice\\egg-practice\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\2018\\practice\\egg-practice\\node_modules\\egg-i18n",
       "version": "2.0.0"
     },
     "watcher": {
@@ -448,8 +463,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\plugin.js",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-watcher@3.0.0@egg-watcher",
+      "from": "E:\\2018\\practice\\egg-practice\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\2018\\practice\\egg-practice\\node_modules\\egg-watcher",
       "version": "3.0.0"
     },
     "multipart": {
@@ -459,8 +474,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\plugin.js",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-multipart@2.0.0@egg-multipart",
+      "from": "E:\\2018\\practice\\egg-practice\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\2018\\practice\\egg-practice\\node_modules\\egg-multipart",
       "version": "2.0.0"
     },
     "development": {
@@ -473,10 +488,10 @@
       "env": [
         "local"
       ],
-      "from": "G:\\2017\\egg\\egg-practice\\config\\plugin.js",
+      "from": "E:\\2018\\practice\\egg-practice\\config\\plugin.js",
       "package": "egg-development",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-development@2.1.0@egg-development",
-      "version": "2.1.0"
+      "path": "E:\\2018\\practice\\egg-practice\\node_modules\\egg-development",
+      "version": "2.2.0"
     },
     "schedule": {
       "enable": true,
@@ -485,9 +500,9 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\plugin.js",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-schedule@3.1.1@egg-schedule",
-      "version": "3.1.1"
+      "from": "E:\\2018\\practice\\egg-practice\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\2018\\practice\\egg-practice\\node_modules\\egg-schedule",
+      "version": "3.3.0"
     },
     "logrotator": {
       "enable": true,
@@ -498,9 +513,9 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\plugin.js",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-logrotator@3.0.1@egg-logrotator",
-      "version": "3.0.1"
+      "from": "E:\\2018\\practice\\egg-practice\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\2018\\practice\\egg-practice\\node_modules\\egg-logrotator",
+      "version": "3.0.2"
     },
     "static": {
       "enable": true,
@@ -509,8 +524,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\plugin.js",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-static@2.1.0@egg-static",
+      "from": "E:\\2018\\practice\\egg-practice\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\2018\\practice\\egg-practice\\node_modules\\egg-static",
       "version": "2.1.0"
     },
     "view": {
@@ -520,9 +535,9 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg@2.2.0@egg\\config\\plugin.js",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-view@2.0.0@egg-view",
-      "version": "2.0.0"
+      "from": "E:\\2018\\practice\\egg-practice\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\2018\\practice\\egg-practice\\node_modules\\egg-view",
+      "version": "2.1.0"
     },
     "nunjucks": {
       "enable": true,
@@ -534,9 +549,9 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\2017\\egg\\egg-practice\\config\\plugin.js",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-view-nunjucks@2.1.4@egg-view-nunjucks",
-      "version": "2.1.4"
+      "from": "E:\\2018\\practice\\egg-practice\\config\\plugin.js",
+      "path": "E:\\2018\\practice\\egg-practice\\node_modules\\egg-view-nunjucks",
+      "version": "2.1.6"
     },
     "sequelize": {
       "enable": true,
@@ -545,9 +560,9 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\2017\\egg\\egg-practice\\config\\plugin.js",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-sequelize@3.1.0@egg-sequelize",
-      "version": "3.1.0"
+      "from": "E:\\2018\\practice\\egg-practice\\config\\plugin.js",
+      "path": "E:\\2018\\practice\\egg-practice\\node_modules\\egg-sequelize",
+      "version": "3.1.2"
     },
     "redis": {
       "enable": true,
@@ -556,9 +571,31 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\2017\\egg\\egg-practice\\config\\plugin.js",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-redis@1.0.2@egg-redis",
+      "from": "E:\\2018\\practice\\egg-practice\\config\\plugin.js",
+      "path": "E:\\2018\\practice\\egg-practice\\node_modules\\egg-redis",
       "version": "1.0.2"
+    },
+    "userservice": {
+      "enable": true,
+      "package": "egg-userservice",
+      "name": "userservice",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "E:\\2018\\practice\\egg-practice\\config\\plugin.js",
+      "path": "E:\\2018\\practice\\egg-practice\\node_modules\\egg-userservice",
+      "version": "2.0.0"
+    },
+    "userrole": {
+      "package": "egg-userrole",
+      "enable": true,
+      "name": "userrole",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "E:\\2018\\practice\\egg-practice\\config\\plugin.js",
+      "path": "E:\\2018\\practice\\egg-practice\\node_modules\\egg-userrole",
+      "version": "2.0.0"
     },
     "passport": {
       "enable": true,
@@ -569,8 +606,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\2017\\egg\\egg-practice\\config\\plugin.js",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-passport@2.0.1@egg-passport",
+      "from": "E:\\2018\\practice\\egg-practice\\config\\plugin.js",
+      "path": "E:\\2018\\practice\\egg-practice\\node_modules\\egg-passport",
       "version": "2.0.1"
     },
     "passportQQ": {
@@ -580,8 +617,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\2017\\egg\\egg-practice\\config\\plugin.js",
-      "path": "G:\\2017\\egg\\egg-practice\\node_modules\\_egg-passport-qq@0.0.1@egg-passport-qq",
+      "from": "E:\\2018\\practice\\egg-practice\\config\\plugin.js",
+      "path": "E:\\2018\\practice\\egg-practice\\node_modules\\egg-passport-qq",
       "version": "0.0.1"
     }
   }

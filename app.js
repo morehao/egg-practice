@@ -4,6 +4,15 @@ module.exports = app => {
     yield app.model.sync({
       force: false
     });
+    yield app.model.Role.bulkCreate([
+      {name: 'admin', systemName: 'ADMIN'},
+      {name: 'schoolAdmin', systemName: 'SCHOOLADMIN'}
+    ])
+    yield function* () {
+      const findRes = yield app.model.Role.findAll()
+      // console.log('findRes:', findRes)
+      console.log('findRes.length:', findRes.length)
+    }
   });
   //应用级别的日志记录
   // module.exports = app => {

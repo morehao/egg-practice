@@ -15,6 +15,7 @@ module.exports = app => {
 
   User.prototype.associate = function() {
     app.model.User.hasMany(app.model.Post, { as: 'posts', foreignKey: 'user_id' });
+    app.model.User.hasMany(app.model.Role, { as: 'role', foreignKey: 'user_id' });
   };
 
   return User;

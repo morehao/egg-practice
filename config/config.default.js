@@ -43,7 +43,7 @@ module.exports = appInfo => {
     dialect: 'mysql', // support: mysql, mariadb, postgres, mssql
     database: 'egg-practice',
     // host: 'localhost',
-    host: '192.168.2.138',
+    host: '127.0.0.1',
     port: '3306',
     username: 'root',
     password: 'root',
@@ -90,7 +90,7 @@ module.exports = appInfo => {
   config.userservice = {
     service: {
       async getUser(ctx) {
-        const {ctx} = this;
+        // const {ctx} = this;
         const user = await ctx.model.User.findAll
         // Retrieve your user data from cookie, redis, db, whatever
         // For common web applications using cookie, you may get session id with ctx.cookies
